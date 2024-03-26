@@ -1,0 +1,199 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .wrapper .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px 0px 40px; }
+    @media screen and (max-width: 768px) {
+      .wrapper .nav {
+        width: 100%; } }
+    @media screen and (max-width: 475px) {
+      .wrapper .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    @media screen and (max-width: 315px) {
+      .wrapper .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    .wrapper .nav .logo {
+      width: 15%; }
+      @media screen and (max-width: 315px) {
+        .wrapper .nav .logo {
+          width: 50%; } }
+      @media screen and (max-width: 475px) {
+        .wrapper .nav .logo {
+          width: 50%; } }
+      .wrapper .nav .logo img {
+        width: 100%; }
+    .wrapper .nav .links {
+      width: 60%; }
+      @media screen and (max-width: 315px) {
+        .wrapper .nav .links {
+          width: 50%; } }
+      .wrapper .nav .links ul {
+        display: flex;
+        justify-content: end; }
+        @media screen and (max-width: 315px) {
+          .wrapper .nav .links ul {
+            display: flex;
+            flex-direction: column; } }
+        @media screen and (max-width: 475px) {
+          .wrapper .nav .links ul {
+            display: flex;
+            flex-direction: column; } }
+        .wrapper .nav .links ul li {
+          margin-left: 20px; }
+          .wrapper .nav .links ul li a {
+            text-decoration: none;
+            color: black; }
+  .wrapper .title {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .wrapper .title {
+        width: 100%; } }
+    @media screen and (max-width: 475px) {
+      .wrapper .title {
+        width: 100%; } }
+    @media screen and (max-width: 315px) {
+      .wrapper .title {
+        width: 100%; } }
+    .wrapper .title h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 50px 0px 50px 0px; }
+    .wrapper .title p {
+      text-align: center;
+      color: #909090;
+      margin-bottom: 40px; }
+    .wrapper .title .hr-line {
+      width: 100%;
+      border: 2px solid #c0bdbded;
+      border-radius: 50px; }
+  .wrapper .recipes {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .wrapper .recipes {
+        width: 100%; } }
+    @media screen and (max-width: 475px) {
+      .wrapper .recipes {
+        width: 100%; } }
+    @media screen and (max-width: 315px) {
+      .wrapper .recipes {
+        width: 100%; } }
+    .wrapper .recipes .headline {
+      margin-top: 40px; }
+      .wrapper .recipes .headline h2 {
+        text-align: center; }
+    .wrapper .recipes .cards {
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 475px) {
+        .wrapper .recipes .cards {
+          display: flex;
+          flex-direction: column; } }
+      @media screen and (max-width: 315px) {
+        .wrapper .recipes .cards {
+          display: flex;
+          flex-direction: column; } }
+      .wrapper .recipes .cards .card {
+        width: 49%;
+        margin-top: 30px; }
+        @media screen and (max-width: 475px) {
+          .wrapper .recipes .cards .card {
+            width: 98%; } }
+        @media screen and (max-width: 315px) {
+          .wrapper .recipes .cards .card {
+            width: 98%; } }
+        .wrapper .recipes .cards .card .img {
+          position: relative;
+          overflow: hidden; }
+          .wrapper .recipes .cards .card .img img {
+            width: 100%;
+            height: auto; }
+          .wrapper .recipes .cards .card .img .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s linear;
+            text-align: center;
+            padding: 10px;
+            font-size: 30px; }
+          .wrapper .recipes .cards .card .img:hover .text-overlay {
+            opacity: 1; }
+  .wrapper footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto; }
+    @media screen and (max-width: 768px) {
+      .wrapper footer {
+        width: 100%; } }
+    @media screen and (max-width: 475px) {
+      .wrapper footer {
+        width: 100%; } }
+    @media screen and (max-width: 315px) {
+      .wrapper footer {
+        width: 100%; } }
+    .wrapper footer .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px; }
+      @media screen and (max-width: 475px) {
+        .wrapper footer .info {
+          display: flex;
+          flex-direction: column; } }
+      @media screen and (max-width: 315px) {
+        .wrapper footer .info {
+          display: flex;
+          flex-direction: column; } }
+      .wrapper footer .info p {
+        color: #909090;
+        font-size: 20px;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          .wrapper footer .info p {
+            font-size: 16px; } }
+        @media screen and (max-width: 475px) {
+          .wrapper footer .info p {
+            font-size: 12px; } }
+        @media screen and (max-width: 315px) {
+          .wrapper footer .info p {
+            font-size: 12px; } }
+      .wrapper footer .info a {
+        text-decoration: none;
+        color: #909090;
+        font-size: 20px; }
+        .wrapper footer .info a:hover {
+          color: #4e4b4b; }
+        @media screen and (max-width: 768px) {
+          .wrapper footer .info a {
+            font-size: 16px; } }
+        @media screen and (max-width: 475px) {
+          .wrapper footer .info a {
+            font-size: 12px; } }
+        @media screen and (max-width: 315px) {
+          .wrapper footer .info a {
+            font-size: 12px; } }
+
+/*# sourceMappingURL=main.css.map */
